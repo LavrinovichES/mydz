@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  #mydiv div {
+            width: 250px;
+            height: 250px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #mydiv {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+<script>
+
+    let block = prompt ("сколько блоков?");
+    let box = "", pic = 1;
+    for (i=1; i<=block; i++) {
+        if (pic>13) pic=1;
+        box += `
+        <div style="background: ${colors()}"><img src="images/${pic++}.jpg"></div> `
+
+    }
+  function colors() {
+    s = "#";
+        let color = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'];
+        for (j=0; j<6; j++) 
+       s += color[Math.floor(Math.random() * color.length)]; 
+            
+            return s;
+  }
+mydiv.innerHTML = box;
+
+</script>
+
+</body>
+</html>

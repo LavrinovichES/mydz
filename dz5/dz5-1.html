@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form name="dataF">
+  <p> x: <input type="text" name="x" value="0.3; 5.2; 9.4; 8">
+  </p>
+   <p> y: <input type="text" name="y" value="43; 5; 3.4; 8; 20">
+  </p>
+   <button type="button" id="result">Вычислить</button>
+ </form>
+    <script>
+        function sum() {
+         let x = dataF.x.value;
+         let y = dataF.y.value;  
+         let arrX = x.split("; ");
+         let arrY = y.split("; ");
+          let C = (funcSum(arrX) +  funcSum(arrY)) / 2;
+           alert(C); 
+        }
+        function funcSum(arr) {
+            let sum = 0;
+            for (let elem of arr) 
+                sum += +elem;
+             return sum;   
+        }
+result.addEventListener("click", sum);   
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+        
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #d1d1d1;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    
+    font-size: 14px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  
+}      
+
+.avatar{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px gray;
+    
+}
+
+
+
+h1{
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+h2{
+    max-width: 400px;
+    max-height: 100px;
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 20px 30px 20px ;
+    background: rgb(191, 212, 252);
+    border-radius: 30px;
+    text-align: center;
+}
+
+ ul{
+    list-style: none;
+ }
+
+
+ a {
+     color: black;
+     text-decoration: none;
+ }
+
+ a:hover{
+     text-decoration: underline;
+ }
+
+ a:active{
+     color: rgb(191, 212, 252);
+
+ }
+ .conteiner{
+     
+     display: flex;
+    flex-wrap: wrap;
+   
+ }
+
+ .block h3{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column 3;
+ }
+ 
+ .info{
+    
+    width: 300px;
+    height: 500px;
+    
+    margin-left: 50px;
+    max-width: 750px;
+    margin-top: 30px;
+    border: 3 solid black;
+
+}
